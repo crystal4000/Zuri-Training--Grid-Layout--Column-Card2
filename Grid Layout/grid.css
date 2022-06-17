@@ -1,0 +1,74 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(4, 4, 29);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px 10px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "top top"
+    "bt-left bt-right";
+  width: 500px;
+  height: 500px;
+}
+
+.bt-right {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.9fr 1.1fr;
+  gap: 10px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "bt-right-tp"
+    "bt-right-bt";
+  grid-area: bt-right;
+}
+
+.bt-right-tp {
+  background: rgb(15, 148, 192);
+  grid-area: bt-right-tp;
+}
+
+.bt-right-bt {
+  background: rgb(15, 148, 192);
+  grid-area: bt-right-bt;
+}
+
+.bt-left {
+  background: green;
+  grid-area: bt-left;
+}
+
+.top {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 10px;
+  grid-auto-flow: row;
+  grid-template-areas: "tp-left tp-left tp-right";
+  grid-area: top;
+}
+
+.tp-left {
+  background: orangered;
+  grid-area: tp-left;
+}
+
+.tp-right {
+  background: orange;
+  grid-area: tp-right;
+}
