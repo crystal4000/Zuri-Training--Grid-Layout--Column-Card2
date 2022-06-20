@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
-
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+}
 body {
   background-color: hsl(0, 0%, 95%);
   min-height: 100vh;
@@ -12,7 +16,22 @@ body {
 
 .container {
   max-width: 960px;
-  margin: 0 auto;
+}
+
+.navbar {
+  text-align: center;
+  padding: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-size: 16px;
+  color: hsl(31, 77%, 52%);
+  text-transform: uppercase;
+}
+
+.navbar a:hover {
+  color: hsl(184, 100%, 22%);
 }
 
 .wrapper {
