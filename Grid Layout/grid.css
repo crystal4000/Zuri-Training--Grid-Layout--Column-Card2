@@ -7,9 +7,6 @@ body {
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: rgb(4, 4, 29);
 }
 
@@ -24,6 +21,28 @@ body {
     "bt-left bt-right";
   width: 500px;
   height: 500px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  text-align: center;
+  padding: 30px 0 40px 0px;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-size: 16px;
+  color: hsl(31, 77%, 52%);
+  text-transform: uppercase;
+}
+
+.navbar a:hover {
+  color: hsl(184, 100%, 22%);
 }
 
 .bt-right {
